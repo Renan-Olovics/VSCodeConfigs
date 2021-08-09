@@ -5,7 +5,7 @@
   "workbench.startupEditor": "newUntitledFile",
 
   "polacode.backgroundColor": "#6633CC",
-  
+
   "editor.tabSize": 2,
   "editor.fontSize": 13,
   "editor.lineHeight": 18,
@@ -25,9 +25,9 @@
   "editor.parameterHints.enabled": true,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
-  
+
   "editor.rulers": [80, 120],
-  
+
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
@@ -38,7 +38,7 @@
     // "**/.hg": true,
     // "**/CVS": true,
     // "**/.DS_Store": true,
-    // "**/node_modules": true
+    "**/node_modules": true
   },
 
   "files.associations": {
@@ -52,14 +52,14 @@
   "emmet.syntaxProfiles": { "javascript": "jsx" },
   "emmet.includeLanguages": { "javascript": "javascriptreact" },
 
-  
+
   "gitlens.codeLens.recentChange.enabled": false,
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.enabled": false,
 
   "git.enableSmartCommit": false,
 
-  "liveshare.featureSet": "insiders", 
+  "liveshare.featureSet": "insiders",
 
   "typescript.tsserver.log": "off",
   "javascript.suggest.autoImports": true,
@@ -131,6 +131,7 @@
   "editor.suggestSelection": "first",
   "liveServer.settings.donotVerifyTags": true,
   "cSpell.userWords": [
+    "Ionicons",
     "chakra",
     "middlewares",
     "prefetch",
@@ -153,5 +154,8 @@
   ],
   "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
   "security.workspace.trust.untrustedFiles": "newWindow",
-  "window.zoomLevel": 0,
+  "files.eol": "\n",
+  "files.trimTrailingWhitespace": true,
+  "editor.formatOnSave": true,
+  "files.insertFinalNewline": true
 }
