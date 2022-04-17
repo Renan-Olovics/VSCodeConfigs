@@ -1,39 +1,103 @@
 {
-  "workbench.iconTheme": "material-icon-theme",
+  //------------------------------------------------------------------------------------------------
+  // VSCode settings
+
+  // General
   "workbench.startupEditor": "newUntitledFile",
-
-  "editor.tabSize": 2,
-  "editor.fontSize": 13,
-  "editor.lineHeight": 18,
-  "editor.fontFamily": "Fira Code Retina",
-  "terminal.integrated.fontSize": 13,
-  "terminal.integrated.fontFamily": "Fira Code",
-  "terminal.integrated.defaultProfile.linux": "zsh",
-  "terminal.integrated.defaultProfile.osx": "/bin/zsh",
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "editor.fontLigatures": true,
-  "editor.semanticHighlighting.enabled": "configuredByTheme",
-
   "explorer.compactFolders": false,
   "editor.renderLineHighlight": "all",
   "workbench.editor.labelFormat": "short",
   "extensions.ignoreRecommendations": false,
-
   "breadcrumbs.enabled": true,
   "editor.parameterHints.enabled": true,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
-
   "editor.rulers": [80, 100, 120],
+  "screencastMode.onlyKeyboardShortcuts": true,
+  "window.menuBarVisibility": "toggle",
+  "editor.minimap.enabled": true,
+  "editor.inlineSuggest.enabled": true,
 
+  // Font
+  "editor.tabSize": 2,
+  "editor.fontSize": 14,
+  "editor.lineHeight": 18,
+  "editor.fontFamily": "Fira Code Retina",
+  "editor.fontLigatures": true,
+
+  //New Files
+  "files.eol": "\n",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "security.workspace.trust.untrustedFiles": "newWindow",
+
+  // Brackets colorize
+  "editor.semanticHighlighting.enabled": "configuredByTheme",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+
+  // Themes
+  "workbench.colorTheme": "Dracula Pro",
+  "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.activeIconPack": "nest",
+  "workbench.productIconTheme": "fluent-icons",
+
+  //Terminal
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontFamily": "Fira Code Retina",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.defaultProfile.osx": "/bin/zsh",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.showExitAlert": false,
+
+  //Git
+  "git.enableSmartCommit": false,
+  "git.autofetch": "all",
+  "git.confirmSync": false,
+
+  //Typescript
+  "typescript.tsserver.log": "off",
+
+  //Imports
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "javascript.updateImportsOnFileMove.enabled": "prompt",
+
+  // Emmets
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+
+  //------------------------------------------------------------------------------------------------
+  //Format on Save
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
 
+  //Prettier Settings Global
+  // "prettier.endOfLine": "lf",
+  // "prettier.printWidth": 100,
+  // "prettier.trailingComma": "es5",
+  // "prettier.semi": false,
+  // "prettier.useEditorConfig": true,
+  // "prettier.singleQuote": true,
+
+  //------------------------------------------------------------------------------------------------
+  // Overwrite default settings
+
+  //Files
   "files.exclude": {
-    "**/node_modules": true
     // ".vscode": true,
+    // ".next": true,
+    // "next-env.d.ts": true,
+    // "next.config.js": true,
+    // "tsconfig.json": true,
     // "config": true,
     // "**/.git": true,
     // "**/.svn": true,
@@ -48,6 +112,7 @@
     // ".eslintignore": true,
     // ".gitignore": true,
     // ".eslintrc.js": true,
+    // ".eslintrc.json": true,
     // ".prettierrc.js": true,
     // ".project": true,
     // "babel.config.js": true,
@@ -56,32 +121,12 @@
     // "metro.config.js": true,
     // "yarn.lock": true,
     // "yarn-error.log": true,
-    // "README.md": true
+    // "README.md": true,
+    "**/node_modules": true
   },
 
-  "files.associations": {
-    ".sequelizerc": "javascript",
-    ".stylelintrc": "json",
-    ".prettierrc": "json",
-    "*.tsx": "typescriptreact",
-    ".env.*": "dotenv"
-  },
-
-  "emmet.syntaxProfiles": { "javascript": "jsx" },
-  "emmet.includeLanguages": { "javascript": "javascriptreact" },
-
-  "gitlens.codeLens.recentChange.enabled": false,
-  "gitlens.codeLens.authors.enabled": false,
-  "gitlens.codeLens.enabled": false,
-
-  "git.enableSmartCommit": false,
-
-  "typescript.tsserver.log": "off",
-  "javascript.suggest.autoImports": true,
-  "typescript.suggest.autoImports": true,
-  "material-icon-theme.activeIconPack": "nest",
-  "screencastMode.onlyKeyboardShortcuts": true,
-
+  //Material Icon Theme
+  "material-icon-theme.folders.theme": "specific",
   "material-icon-theme.folders.associations": {
     "infra": "app",
     "entities": "class",
@@ -110,31 +155,13 @@
     "actions": "Redux-actions",
     "store": "Redux-store",
     "redux": "Redux-actions",
-
-    // evas :
-    "ChatRoom": "Content",
-    "AuthScreens": "Content",
-    "unAuthScreens": "Content",
-    "ChatScreen": "Content",
-    "CheckIn": "Content",
-    "ExpoCamera": "Content",
-    "FilterScreen": "Content",
-    "InviteUser": "Content",
-    "MatchScreen": "Content",
-    "MyProfile": "Content",
-    "PreferencesScreen": "Content",
-    "PremiumPlans": "Content",
-    "ProfileScreen": "Content",
-    "PremiumPlansSugar": "Content",
-    "SupportScreen": "Content",
-    "LoginScreen": "Content",
-    "RegisterScreen": "Content",
-    "ResetPassword": "Content"
+    "storage": "Temp"
   },
 
   "material-icon-theme.files.associations": {
-    "ormconfig.json": "database",
-    "*.proto": "3d",
+    "index.ts": "Minecraft",
+    "styles.ts": "Figma",
+
     "*.webpack.js": "webpack",
     //
     "*.reducer.js": "Redux-reducer",
@@ -167,103 +194,49 @@
     "types.ts": "typescript-def",
     "type.ts": "typescript-def",
     "*.types.ts": "typescript-def",
-    "*.type.ts": "typescript-def",
-
-    // Testing
-    "package-lock.json": "Npm",
-    "restql.yml": "Restql",
-    "pyproject.toml": "Python",
-    "*.steps.ts": "Test-ts",
-    "docker-compose.init.yml": "Docker",
-    "lint.report.json": "Eslint",
-    "sentry.properties": "Sentry",
-    "sentry.client.config.js": "Sentry",
-    "sentry.server.config.js": "Sentry",
-    "next.config.js": "Vercel",
-    "*.saga.ts": "Redux-store",
-    "sagas.ts": "Redux-store"
+    "*.type.ts": "typescript-def"
   },
-
   "material-icon-theme.languages.associations": {
     "dotenv": "tune"
   },
 
+  // Reassociate files wih the correct language
+  "files.associations": {
+    ".sequelizerc": "javascript",
+    ".stylelintrc": "json",
+    ".prettierrc": "json",
+    "*.tsx": "typescriptreact",
+    ".env.*": "dotenv"
+  },
+
+  //------------------------------------------------------------------------------------------------
+  //Extensions
+
+  //GitLens
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.enabled": false,
+
+  //Colorize
   "colorize.include": ["*"],
 
-  "workbench.colorTheme": "Dracula",
-  "window.menuBarVisibility": "toggle",
-  "typescript.updateImportsOnFileMove.enabled": "never",
-  "cSpell.enableFiletypes": [
-    "!asciidoc",
-    "!c",
-    "!cpp",
-    "!csharp",
-    "!go",
-    "!handlebars",
-    "!haskell",
-    "!jade",
-    "!java",
-    "!latex",
-    "!php",
-    "!pug",
-    "!python",
-    "!restructuredtext",
-    "!rust",
-    "!scala",
-    "!scss"
-  ],
-  "cSpell.language": "en,pt",
-  "editor.suggestSelection": "first",
-  "liveServer.settings.donotVerifyTags": true,
-  "cSpell.userWords": [
-    "BDSM",
-    "browserslist",
-    "chakra",
-    "checkin",
-    "commitlint",
-    "datetimepicker",
-    "ellipsize",
-    "fortawesome",
-    "Ionicons",
-    "Matchs",
-    "middlewares",
-    "miragejs",
-    "Olovics",
-    "Poliamor",
-    "preconnect",
-    "prefetch",
-    "ptomasroos",
-    "raleway",
-    "rocketseat",
-    "storaged",
-    "suggar",
-    "SVGS",
-    "testid",
-    "toastify",
-    "unform",
-    "upsert"
-  ],
-  "javascript.updateImportsOnFileMove.enabled": "prompt",
-  "workbench.productIconTheme": "fluent-icons",
-  "terminal.integrated.showExitAlert": false,
-
+  //Split HTML Attributes
   "splitHTMLAttributes.closingBracketOnNewLine": true,
 
-  //TODO extension
-  "todo-tree.general.tags": ["BUG", "HACK", "FIXME", "TODO", "XXX", "[ ]", "[x]"],
+  //TODO Tree
   "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]"
+  ],
 
-  "liveshare.featureSet": "insiders",
-
+  //PolarCode
   "polacode.backgroundColor": "#6633CC",
-
-  "tabnine.experimentalAutoImports": true,
-
-  //Config de pag
-  "files.eol": "\n",
-  "files.trimTrailingWhitespace": true,
-  "files.insertFinalNewline": true,
-  "security.workspace.trust.untrustedFiles": "newWindow",
 
   //Template String Converter
   "template-string-converter.quoteType": "both",
@@ -278,21 +251,38 @@
     "javascriptreact"
   ],
 
-  // prettier
-  "prettier.endOfLine": "lf",
-  "prettier.printWidth": 100,
-  "prettier.trailingComma": "es5",
-  "prettier.semi": false,
-  "prettier.useEditorConfig": true,
-  "prettier.singleQuote": true,
+  //Live Server
+  "liveServer.settings.donotShowInfoMsg": true,
 
-  // ajuste de codigo
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
+  //Code Spell Checker
+  "cSpell.language": "en,pt,pt_BR",
+  "cSpell.userWords": [
+    "dayjs",
+    "hookform",
+    "jwplayer",
+    "lottie",
+    "pageview",
+    "plopfile",
+    "recaptcha",
+    "screenfull",
+    "stylelint",
+    "sxsw",
+    "SXSW",
+    "theming",
+    "typecheck",
+    "videojs",
+    "Youtube"
+  ],
+
+  //GitHub Copilot
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false,
+    "typescriptreact": true
   },
-  "[css]": {
-    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
-  },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.minimap.enabled": false
+
+  //Notes
+  "Notes.notesLocation": "/home/recri/Documents/Notes"
 }
