@@ -1,77 +1,5 @@
 {
   //------------------------------------------------------------------------------------------------
-  // VSCode settings
-  // General
-  "workbench.startupEditor": "none",
-  "explorer.compactFolders": false,
-  "editor.renderLineHighlight": "all",
-  "workbench.editor.labelFormat": "short",
-  "extensions.ignoreRecommendations": false,
-  "breadcrumbs.enabled": true,
-  "editor.parameterHints.enabled": true,
-  "explorer.confirmDragAndDrop": false,
-  "explorer.confirmDelete": false,
-  "editor.rulers": [80, 100, 120],
-  "screencastMode.onlyKeyboardShortcuts": true,
-  "window.menuBarVisibility": "toggle",
-  "editor.minimap.enabled": true,
-  "editor.inlineSuggest.enabled": true,
-  // Font
-  "editor.tabSize": 2,
-  "editor.fontSize": 14,
-  "editor.lineHeight": 18,
-  // "editor.fontFamily": "JetBrains Mono",
-  "editor.fontFamily": "Fira Code Retina",
-  "editor.fontLigatures": true,
-
-  //New Files
-  "files.eol": "\n",
-  "files.trimTrailingWhitespace": true,
-  "files.insertFinalNewline": true,
-  "security.workspace.trust.untrustedFiles": "newWindow",
-
-  // Brackets colorize
-  "editor.semanticHighlighting.enabled": "configuredByTheme",
-  "editor.bracketPairColorization.enabled": true,
-  "editor.guides.bracketPairs": "active",
-
-  // Themes
-  "workbench.colorTheme": "Dracula Pro (Van Helsing)",
-  "workbench.iconTheme": "material-icon-theme",
-  "material-icon-theme.activeIconPack": "nest",
-  "workbench.productIconTheme": "fluent-icons",
-
-  //Terminal
-  "terminal.integrated.fontSize": 14,
-  "terminal.integrated.fontFamily": "Fira Code Retina",
-  "terminal.integrated.defaultProfile.linux": "zsh",
-  "terminal.integrated.defaultProfile.osx": "zsh",
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "terminal.integrated.showExitAlert": false,
-
-  //Git
-  "git.enableSmartCommit": false,
-  "git.autofetch": true,
-  "git.confirmSync": false,
-
-  //Typescript
-  "typescript.tsserver.log": "off",
-
-  //Imports
-  "javascript.suggest.autoImports": true,
-  "typescript.suggest.autoImports": true,
-  "typescript.updateImportsOnFileMove.enabled": "never",
-  "javascript.updateImportsOnFileMove.enabled": "always",
-
-  // Emmets
-  "emmet.syntaxProfiles": {
-    "javascript": "jsx"
-  },
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
-  },
-
-  //------------------------------------------------------------------------------------------------
   //Format on Save
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
@@ -81,51 +9,85 @@
   // "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
   // "editor.defaultFormatter": "dbaeumer.vscode-eslint",
 
-  // //Prettier Settings Global
+  //Prettier Settings Global
   "prettier.endOfLine": "lf",
   "prettier.printWidth": 100,
   "prettier.trailingComma": "es5",
   "prettier.semi": false,
   "prettier.useEditorConfig": true,
   "prettier.singleQuote": true,
-
   //------------------------------------------------------------------------------------------------
-  // Overwrite default settings
-
-  //Files
+  // General
+  "workbench.startupEditor": "none",
+  "explorer.compactFolders": false,
+  "editor.renderLineHighlight": "all",
+  "workbench.editor.labelFormat": "short",
+  "extensions.ignoreRecommendations": true,
+  "breadcrumbs.enabled": true,
+  "editor.parameterHints.enabled": true,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "editor.rulers": [80, 100, 120],
+  "window.menuBarVisibility": "toggle",
+  "editor.minimap.enabled": true,
+  "editor.inlineSuggest.enabled": true,
+  //------------------------------------------------------------------------------------------------
   "files.exclude": {
-    // ".vscode": true,
-    // ".next": true,
-    // "next-env.d.ts": true,
-    // "next.config.js": true,
-    // "tsconfig.json": true,
-    // "config": true,
-    // "**/.git": true,
-    // "**/.svn": true,
-    // "**/.hg": true,
-    // "**/CVS": true,
-    // "**/.DS_Store": true,
-    // ".husky": true,
-    // ".idea": true,
-    // ".expo": true,
-    // ".expo-shared": true,
-    // ".editorconfig": true,
-    // ".eslintignore": true,
-    // ".gitignore": true,
-    // ".eslintrc.js": true,
-    // ".eslintrc.json": true,
-    // ".prettierrc.js": true,
-    // ".project": true,
-    // "babel.config.js": true,
-    // "commitlint.config.js": true,
-    // "debug.log": true,
-    // "metro.config.js": true,
-    // "yarn.lock": true,
-    // "yarn-error.log": true,
-    // "README.md": true,
-    // "**/node_modules": true
+    "**/node_modules": true
   },
-
+  //------------------------------------------------------------------------------------------------
+  // Font
+  "editor.tabSize": 2,
+  "editor.fontSize": 14,
+  "editor.lineHeight": 18,
+  "editor.fontFamily": "Fira Code Retina",
+  "editor.fontLigatures": true,
+  //------------------------------------------------------------------------------------------------
+  // Themes
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Dracula Pro (Van Helsing)",
+  "material-icon-theme.activeIconPack": "nest",
+  "workbench.productIconTheme": "fluent-icons",
+  //------------------------------------------------------------------------------------------------
+  //New Files
+  "files.eol": "\n",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "security.workspace.trust.untrustedFiles": "newWindow",
+  //------------------------------------------------------------------------------------------------
+  // Brackets colorize
+  "editor.semanticHighlighting.enabled": "configuredByTheme",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  //------------------------------------------------------------------------------------------------
+  //Git
+  "git.enableSmartCommit": false,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  //------------------------------------------------------------------------------------------------
+  //Typescript
+  "typescript.tsserver.log": "off",
+  //------------------------------------------------------------------------------------------------
+  //Imports
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  //------------------------------------------------------------------------------------------------
+  // Emmets
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  //------------------------------------------------------------------------------------------------
+  //------------------------------------------------------------------------------------------------
+  //----------------------------------------Extensions----------------------------------------------
+  //----------------------------------------Extensions----------------------------------------------
+  //----------------------------------------Extensions----------------------------------------------
+  //------------------------------------------------------------------------------------------------
+  //------------------------------------------------------------------------------------------------
   //Material Icon Theme
   "material-icon-theme.folders.theme": "specific",
   "material-icon-theme.folders.associations": {
@@ -163,7 +125,6 @@
     "filters": "Private",
     "filter": "Private"
   },
-
   "material-icon-theme.files.associations": {
     "index.ts": "Minecraft",
     "index.js": "Minecraft",
@@ -217,16 +178,11 @@
     ".env*": "dotenv"
   },
 
-  //------------------------------------------------------------------------------------------------
-  //Extensions
-
   //inlineparameters
   "workbench.colorCustomizations": {
     "inlineparameters.annotationForeground": "#8be9fd",
     "inlineparameters.annotationBackground": "#ffffff00"
   },
-  "inline-parameters.fontStyle": "normal",
-  "inline-parameters.fontSize": "14px",
 
   //GitLens
   "gitlens.codeLens.recentChange.enabled": false,
@@ -238,19 +194,7 @@
 
   //TODO Tree
   "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
-  "todo-tree.general.tags": [
-    "BUG",
-    "HACK",
-    "FIXME",
-    "TODO",
-    "XXX",
-    "[ ]",
-    "[x]",
-    "TESTE"
-  ],
-
-  //PolarCode
-  "polacode.backgroundColor": "#6633CC",
+  "todo-tree.general.tags": ["BUG", "HACK", "FIXME", "TODO", "XXX", "[ ]", "[x]", "TESTE"],
 
   //Template String Converter
   "template-string-converter.quoteType": "both",
@@ -264,10 +208,6 @@
     "typescriptreact",
     "javascriptreact"
   ],
-
-  //Live Server
-  "liveServer.settings.donotShowInfoMsg": true,
-
   //Code Spell Checker
   "cSpell.language": "en,pt,pt_BR",
   "cSpell.userWords": [
@@ -325,34 +265,7 @@
     "typescriptreact": true,
     "typescript": true
   },
-
-  //Notes
-  "Notes.notesLocation": "/home/recri/Documents/Notes",
-  // random bellow
-  "xml.java.home": null,
-  "tabnine.experimentalAutoImports": true,
-  "[xml]": {
-    "editor.defaultFormatter": "DotJoshJohnson.xml"
-  },
   "editor.accessibilitySupport": "off",
-  "totalTypeScript.hideAllTips": false,
-  "totalTypeScript.hideBasicTips": true,
-  "totalTypeScript.hiddenTips": [
-    "passing-generics-to-types",
-    "keyof",
-    "typeof",
-    "non-null-expression",
-    "type-alias-with-generics",
-    "generic-slots-in-functions",
-    "omit-utility-type",
-    "partial-utility-type",
-    "returntype-utility-type",
-    "mapped-type",
-    "record-utility-type",
-    "pick-utility-type",
-    "type-alias-with-multiple-generics",
-    "tuple-type"
-  ],
   "terminal.integrated.env.windows": {},
   "terminal.integrated.env.linux": {},
   "terminal.integrated.env.osx": {},
@@ -385,18 +298,32 @@
     },
     "textMateRules": []
   },
-  "dotenv.enableAutocloaking": false,
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma"
   },
-  "figma.autocompleteBlocks": true,
-  "tailwindCSS.experimental.classRegex": [
-    ["tv\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
-  ],
+  "tailwindCSS.experimental.classRegex": [["tv\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]],
   "console-ninja.featureSet": "Community",
   "[svelte]": {
     "editor.defaultFormatter": "svelte.svelte-vscode"
   },
   "remote.autoForwardPortsSource": "hybrid",
   "svelte.enable-ts-plugin": true
+  //------------------------------------------------------------------------------------------------
+  //------------------------------------------------------------------------------------------------
+  //------------------------------------------------------------------------------------------------
+  //------------------------------------------------------------------------------------------------
+  //------------------------------------------------------------------------------------------------
+  //------------------------------------------------------------------------------------------------
+  //------------------------------------------------------------------------------------------------
+  //------------------------------------------------------------------------------------------------
+  //------------------------------------------------------------------------------------------------
+  //------------------------------------------------------------------------------------------------
+  //------------------------------------------------------------------------------------------------
+  //------------------------------------------------------------------------------------------------
+  //------------------------------------------------------------------------------------------------
+  //------------------------------------------------------------------------------------------------
+  //------------------------------------------------------------------------------------------------
+  //------------------------------------------------------------------------------------------------
+  //------------------------------------------------------------------------------------------------
+  //------------------------------------------------------------------------------------------------
 }
