@@ -1,9 +1,8 @@
 {
   //------------------------------------------------------------------------------------------------
   // VSCode settings
-
   // General
-  "workbench.startupEditor": "newUntitledFile",
+  "workbench.startupEditor": "none",
   "explorer.compactFolders": false,
   "editor.renderLineHighlight": "all",
   "workbench.editor.labelFormat": "short",
@@ -17,11 +16,11 @@
   "window.menuBarVisibility": "toggle",
   "editor.minimap.enabled": true,
   "editor.inlineSuggest.enabled": true,
-
   // Font
   "editor.tabSize": 2,
   "editor.fontSize": 14,
   "editor.lineHeight": 18,
+  // "editor.fontFamily": "JetBrains Mono",
   "editor.fontFamily": "Fira Code Retina",
   "editor.fontLigatures": true,
 
@@ -37,7 +36,7 @@
   "editor.guides.bracketPairs": "active",
 
   // Themes
-  "workbench.colorTheme": "Dracula Pro",
+  "workbench.colorTheme": "Dracula Pro (Van Helsing)",
   "workbench.iconTheme": "material-icon-theme",
   "material-icon-theme.activeIconPack": "nest",
   "workbench.productIconTheme": "fluent-icons",
@@ -46,13 +45,13 @@
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.fontFamily": "Fira Code Retina",
   "terminal.integrated.defaultProfile.linux": "zsh",
-  "terminal.integrated.defaultProfile.osx": "/bin/zsh",
+  "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "terminal.integrated.showExitAlert": false,
 
   //Git
   "git.enableSmartCommit": false,
-  "git.autofetch": "all",
+  "git.autofetch": true,
   "git.confirmSync": false,
 
   //Typescript
@@ -62,7 +61,7 @@
   "javascript.suggest.autoImports": true,
   "typescript.suggest.autoImports": true,
   "typescript.updateImportsOnFileMove.enabled": "never",
-  "javascript.updateImportsOnFileMove.enabled": "prompt",
+  "javascript.updateImportsOnFileMove.enabled": "always",
 
   // Emmets
   "emmet.syntaxProfiles": {
@@ -76,17 +75,19 @@
   //Format on Save
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll": "explicit"
   },
-  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+  // "editor.defaultFormatter": "dbaeumer.vscode-eslint",
 
-  //Prettier Settings Global
-  // "prettier.endOfLine": "lf",
-  // "prettier.printWidth": 100,
-  // "prettier.trailingComma": "es5",
-  // "prettier.semi": false,
-  // "prettier.useEditorConfig": true,
-  // "prettier.singleQuote": true,
+  // //Prettier Settings Global
+  "prettier.endOfLine": "lf",
+  "prettier.printWidth": 100,
+  "prettier.trailingComma": "es5",
+  "prettier.semi": false,
+  "prettier.useEditorConfig": true,
+  "prettier.singleQuote": true,
 
   //------------------------------------------------------------------------------------------------
   // Overwrite default settings
@@ -122,7 +123,7 @@
     // "yarn.lock": true,
     // "yarn-error.log": true,
     // "README.md": true,
-    "**/node_modules": true
+    // "**/node_modules": true
   },
 
   //Material Icon Theme
@@ -155,11 +156,17 @@
     "actions": "Redux-actions",
     "store": "Redux-store",
     "redux": "Redux-actions",
-    "storage": "Temp"
+    "storage": "Temp",
+    "presentation": "Mjml",
+    "exceptions": "Error",
+    "exception": "Error",
+    "filters": "Private",
+    "filter": "Private"
   },
 
   "material-icon-theme.files.associations": {
     "index.ts": "Minecraft",
+    "index.js": "Minecraft",
     "styles.ts": "Figma",
 
     "*.webpack.js": "webpack",
@@ -206,11 +213,20 @@
     ".stylelintrc": "json",
     ".prettierrc": "json",
     "*.tsx": "typescriptreact",
-    ".env.*": "dotenv"
+    ".env.*": "dotenv",
+    ".env*": "dotenv"
   },
 
   //------------------------------------------------------------------------------------------------
   //Extensions
+
+  //inlineparameters
+  "workbench.colorCustomizations": {
+    "inlineparameters.annotationForeground": "#8be9fd",
+    "inlineparameters.annotationBackground": "#ffffff00"
+  },
+  "inline-parameters.fontStyle": "normal",
+  "inline-parameters.fontSize": "14px",
 
   //GitLens
   "gitlens.codeLens.recentChange.enabled": false,
@@ -219,9 +235,6 @@
 
   //Colorize
   "colorize.include": ["*"],
-
-  //Split HTML Attributes
-  "splitHTMLAttributes.closingBracketOnNewLine": true,
 
   //TODO Tree
   "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
@@ -232,7 +245,8 @@
     "TODO",
     "XXX",
     "[ ]",
-    "[x]"
+    "[x]",
+    "TESTE"
   ],
 
   //PolarCode
@@ -257,32 +271,132 @@
   //Code Spell Checker
   "cSpell.language": "en,pt,pt_BR",
   "cSpell.userWords": [
+    "airbnb",
+    "backoffice",
+    "camelcase",
+    "chakra",
+    "Cnpj",
     "dayjs",
+    "defaulticon",
+    "draftjs",
+    "gatsby",
     "hookform",
+    "Iphone",
     "jwplayer",
+    "lightbox",
     "lottie",
+    "mailtrap",
+    "middlewares",
+    "minetoo",
+    "nestjs",
+    "nextjs",
+    "ongoingorder",
     "pageview",
+    "Parens",
     "plopfile",
+    "pokemon",
     "recaptcha",
+    "reduxjs",
     "screenfull",
+    "storaged",
     "stylelint",
+    "svgr",
     "sxsw",
     "SXSW",
+    "tailwindcss",
+    "tanstack",
     "theming",
+    "toastify",
+    "trpc",
     "typecheck",
+    "uuidv",
     "videojs",
+    "vitejs",
     "Youtube"
   ],
 
   //GitHub Copilot
   "github.copilot.enable": {
     "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": false,
     "yaml": false,
-    "plaintext": false,
-    "markdown": false,
-    "typescriptreact": true
+    "typescriptreact": true,
+    "typescript": true
   },
 
   //Notes
-  "Notes.notesLocation": "/home/recri/Documents/Notes"
+  "Notes.notesLocation": "/home/recri/Documents/Notes",
+  // random bellow
+  "xml.java.home": null,
+  "tabnine.experimentalAutoImports": true,
+  "[xml]": {
+    "editor.defaultFormatter": "DotJoshJohnson.xml"
+  },
+  "editor.accessibilitySupport": "off",
+  "totalTypeScript.hideAllTips": false,
+  "totalTypeScript.hideBasicTips": true,
+  "totalTypeScript.hiddenTips": [
+    "passing-generics-to-types",
+    "keyof",
+    "typeof",
+    "non-null-expression",
+    "type-alias-with-generics",
+    "generic-slots-in-functions",
+    "omit-utility-type",
+    "partial-utility-type",
+    "returntype-utility-type",
+    "mapped-type",
+    "record-utility-type",
+    "pick-utility-type",
+    "type-alias-with-multiple-generics",
+    "tuple-type"
+  ],
+  "terminal.integrated.env.windows": {},
+  "terminal.integrated.env.linux": {},
+  "terminal.integrated.env.osx": {},
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "remote.SSH.remotePlatform": {
+    "Macbook": "macOS",
+    "renans-mbp": "macOS"
+  },
+  "remote.SSH.connectTimeout": 30,
+  "editor.tokenColorCustomizations": {
+    "[*Light*]": {
+      "textMateRules": [
+        {
+          "scope": "ref.matchtext",
+          "settings": {
+            "foreground": "#000"
+          }
+        }
+      ]
+    },
+    "[*Dark*]": {
+      "textMateRules": [
+        {
+          "scope": "ref.matchtext",
+          "settings": {
+            "foreground": "#fff"
+          }
+        }
+      ]
+    },
+    "textMateRules": []
+  },
+  "dotenv.enableAutocloaking": false,
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "figma.autocompleteBlocks": true,
+  "tailwindCSS.experimental.classRegex": [
+    ["tv\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
+  ],
+  "console-ninja.featureSet": "Community",
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "remote.autoForwardPortsSource": "hybrid",
+  "svelte.enable-ts-plugin": true
 }
